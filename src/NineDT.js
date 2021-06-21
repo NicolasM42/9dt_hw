@@ -117,7 +117,6 @@ class NineDT extends React.Component {
                 return response.text();
             })
             .then(text => {
-                console.log(text);
                 this.setState({response: text}, () => {this.buildMoveSet(text)});
             })
             .catch(function(error) {
@@ -338,7 +337,7 @@ class NineDT extends React.Component {
                     </Grid>
                 </Box>
 
-                <Divider style={{margin: standardPadding}}/>
+                <Divider variant="middle" style={{margin: standardPadding}}/>
                 <Typography variant="h5">Game Status: {this.state.gameStatus}</Typography>
                 <Button 
                     style={{display: this.state.playAgainDisplay, background: themeGreen, color: white, margin: standardPadding}} 
