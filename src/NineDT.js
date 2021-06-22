@@ -263,7 +263,7 @@ class NineDT extends React.Component {
                 buttonsDisabled: true,
                 playAgainDisplay: 'inline',
                 gameActive: false
-            }, () => {this.initBotsMove()})
+            });
         }
         else {
             this.initBotsMove();
