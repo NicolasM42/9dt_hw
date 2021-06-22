@@ -295,7 +295,7 @@ class NineDT extends React.Component {
     render() {
         return(
             <div>
-                <AppBar style={{background: themeGreen}} position="static">
+                <AppBar style={{background: themeGreen, width: '100%'}} position="static">
                     <h1>Nick's 9dt</h1>
                 </AppBar>
 
