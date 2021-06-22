@@ -318,10 +318,10 @@ class NineDT extends React.Component {
                 <Box display="flex" style={{justifyContent:"center"}}>
                     <Grid container spacing={2} direction="column" style={{padding: standardPadding, maxWidth: '500px'}}>
                         <Grid container item spacing={2}>
-                            <Grid item xs={3}><Button disabled={this.state.buttonsDisabled || this.state.col0Full} onClick={() => this.addMove(0)}><DropIcon/></Button></Grid>
-                            <Grid item xs={3}><Button disabled={this.state.buttonsDisabled || this.state.col1Full} onClick={() => this.addMove(1)}><DropIcon/></Button></Grid>
-                            <Grid item xs={3}><Button disabled={this.state.buttonsDisabled || this.state.col2Full} onClick={() => this.addMove(2)}><DropIcon/></Button></Grid>
-                            <Grid item xs={3}><Button disabled={this.state.buttonsDisabled || this.state.col3Full} onClick={() => this.addMove(3)}><DropIcon/></Button></Grid>
+                            <Grid item xs={3}><Button variant="contained" disabled={this.state.buttonsDisabled || this.state.col0Full} onClick={() => this.addMove(0)}><DropIcon/></Button></Grid>
+                            <Grid item xs={3}><Button variant="contained" disabled={this.state.buttonsDisabled || this.state.col1Full} onClick={() => this.addMove(1)}><DropIcon/></Button></Grid>
+                            <Grid item xs={3}><Button variant="contained" disabled={this.state.buttonsDisabled || this.state.col2Full} onClick={() => this.addMove(2)}><DropIcon/></Button></Grid>
+                            <Grid item xs={3}><Button variant="contained" disabled={this.state.buttonsDisabled || this.state.col3Full} onClick={() => this.addMove(3)}><DropIcon/></Button></Grid>
                         </Grid>
                         {this.state.board.map((col) => (
                             <Grid container item spacing={2}>
